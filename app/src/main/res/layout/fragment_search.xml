@@ -3,13 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.example.internship.accenture.beaconapp.MainActivity">
+    tools:context="com.example.internship.accenture.beaconapp.MainActivity"
+    android:id="@+id/search_fr">
 
     <!-- TODO: Update blank fragment layout -->
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="0dp"
-        android:layout_height="300dp"
+        android:layout_height="400dp"
         app:layout_constraintHorizontal_bias="0.0"
 
         app:layout_constraintLeft_toLeftOf="parent"
@@ -22,8 +23,6 @@
             android:id="@+id/content"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
 
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -33,13 +32,16 @@
             app:rb_radius="25dp"
             app:rb_rippleAmount="4"
             tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="8dp">
+            tools:layout_editor_absoluteY="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="52dp">
 
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
                 android:layout_centerHorizontal="true"
                 android:layout_centerInParent="true"
                 app:srcCompat="@mipmap/beacon"
@@ -50,20 +52,23 @@
 
     <TextView
         android:id="@+id/textView"
+        android:layout_width="171dp"
+        android:layout_height="88dp"
         android:paddingTop="60dp"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
         android:text="@string/get_in_range_to_check_in"
         android:textAlignment="center"
 
         android:textSize="25sp"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintHorizontal_bias="0.502"
+        android:layout_marginTop="0dp"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="0dp" />
+        android:layout_marginBottom="24dp"
+        app:layout_constraintVertical_bias="0.0" />
 
 </android.support.constraint.ConstraintLayout>
